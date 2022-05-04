@@ -1,0 +1,171 @@
+a1 = float(input ("Введите первое число транспорта А: "))
+b1 = float(input ("Введите первое число транспорта B: "))
+c1 = float(input ("Введите первое число транспорта C: "))
+proverka = float(input ("\n"+"Первая характеристика - stymulanta - введите 1, если destymulanta - введите 2, nominanta - 3 "+"\n"))
+if proverka==1:
+	maxx=max(a1,b1,c1)
+	minn=min(a1,b1,c1)
+	x1=(a1-minn)/(maxx-minn)
+	x2=(b1-minn)/(maxx-minn)
+	x3=(c1-minn)/(maxx-minn)
+	print("\n"+"x1="+str(x1)+"\n"+"x2="+str(x2)+"\n"+"x3="+str(x3)+"\n")
+elif proverka==2:
+	maxx=max(a1,b1,c1)
+	minn=min(a1,b1,c1)
+	x1=(maxx-a1)/(maxx-minn)
+	x2=(maxx-b1)/(maxx-minn)
+	x3=(maxx-c1)/(maxx-minn)
+	print("\n"+"x1="+str(x1)+"\n"+"x2="+str(x2)+"\n"+"x3="+str(x3)+"\n")
+else:
+	nominan=float(input ("Введите идеальное значение для номинанты: "))
+	maxx=max(a1,b1,c1,nominan)
+	minn=min(a1,b1,c1,nominan)
+	if nominan>a1:
+		x1=(a1-minn)/(nominan-minn)
+	else:
+		x1=(maxx-a1)/(maxx-nominan)
+	if nominan>b1:
+		x2=(b1-minn)/(nominan-minn)
+	else:
+		x2=(maxx-b1)/(maxx-nominan)
+	if nominan>c1:
+		x3=(c1-minn)/(nominan-minn)
+	else:
+		x3=(maxx-c1)/(maxx-nominan)
+	print("\n"+"x1="+str(x1)+"\n"+"x2="+str(x2)+"\n"+"x3="+str(x3)+"\n")
+#
+#
+#
+#
+#
+#
+a1 = float(input ("Введите второе число транспорта А: "))
+b1 = float(input ("Введите второе число транспорта B: "))
+c1 = float(input ("Введите второе число транспорта C: "))
+proverka = float(input ("\n"+"Вторая характеристика - stymulanta - введите 1, если destymulanta - введите 2, nominanta - 3 "+"\n"))
+if proverka==1:
+	maxx=max(a1,b1,c1)
+	minn=min(a1,b1,c1)
+	xx1=(a1-minn)/(maxx-minn)
+	xx2=(b1-minn)/(maxx-minn)
+	xx3=(c1-minn)/(maxx-minn)
+	print("\n"+"x1="+str(xx1)+"\n"+"x2="+str(xx2)+"\n"+"x3="+str(xx3)+"\n")
+elif proverka==2:
+	maxx=max(a1,b1,c1)
+	minn=min(a1,b1,c1)
+	xx1=(maxx-a1)/(maxx-minn)
+	xx2=(maxx-b1)/(maxx-minn)
+	xx3=(maxx-c1)/(maxx-minn)
+	print("\n"+"x1="+str(xx1)+"\n"+"x2="+str(xx2)+"\n"+"x3="+str(xx3)+"\n")
+else:
+	nominan=float(input ("Введите идеальное значение для номинанты: "))
+	maxx=max(a1,b1,c1,nominan)
+	minn=min(a1,b1,c1,nominan)
+	if nominan>a1:
+		xx1=(a1-minn)/(nominan-minn)
+	else:
+		xx1=(maxx-a1)/(maxx-nominan)
+	if nominan>b1:
+		xx2=(b1-minn)/(nominan-minn)
+	else:
+		xx2=(maxx-b1)/(maxx-nominan)
+	if nominan>c1:
+		xx3=(c1-minn)/(nominan-minn)
+	else:
+		xx3=(maxx-c1)/(maxx-nominan)
+	print("\n"+"x1="+str(xx1)+"\n"+"x2="+str(xx2)+"\n"+"x3="+str(xx3)+"\n")
+#
+#
+#
+#
+#
+#
+a1 = float(input ("Введите третье число транспорта А: "))
+b1 = float(input ("Введите третье число транспорта B: "))
+c1 = float(input ("Введите третье число транспорта C: "))
+proverka = float(input ("\n"+"Третья характеристика - stymulanta - введите 1, если destymulanta - введите 2, nominanta - 3"+"\n"))
+if proverka==1:
+	maxx=max(a1,b1,c1)
+	minn=min(a1,b1,c1)
+	xxx1=(a1-minn)/(maxx-minn)
+	xxx2=(b1-minn)/(maxx-minn)
+	xxx3=(c1-minn)/(maxx-minn)
+	print("\n"+"x1="+str(xxx1)+"\n"+"x2="+str(xxx2)+"\n"+"x3="+str(xxx3)+"\n")
+elif proverka==2:
+	maxx=max(a1,b1,c1)
+	minn=min(a1,b1,c1)
+	xxx1=(maxx-a1)/(maxx-minn)
+	xxx2=(maxx-b1)/(maxx-minn)
+	xxx3=(maxx-c1)/(maxx-minn)
+	print("\n"+"x1="+str(xxx1)+"\n"+"x2="+str(xxx2)+"\n"+"x3="+str(xxx3)+"\n")
+else:
+	nominan=float(input ("Введите идеальное значение для номинанты: "))
+	maxx=max(a1,b1,c1,nominan)
+	minn=min(a1,b1,c1,nominan)
+	if nominan>a1:
+		xxx1=(a1-minn)/(nominan-minn)
+	else:
+		xxx1=(maxx-a1)/(maxx-nominan)
+	if nominan>b1:
+		xxx2=(b1-minn)/(nominan-minn)
+	else:
+		xxx2=(maxx-b1)/(maxx-nominan)
+	if nominan>c1:
+		xxx3=(c1-minn)/(nominan-minn)
+	else:
+		xxx3=(maxx-c1)/(maxx-nominan)
+	print("\n"+"x1="+str(xxx1)+"\n"+"x2="+str(xxx2)+"\n"+"x3="+str(xxx3)+"\n")
+#
+#
+#
+#
+#
+#
+#
+a1 = float(input ("Введите четвертое число транспорта А: "))
+b1 = float(input ("Введите четвертое число транспорта B: "))
+c1 = float(input ("Введите четвертое число транспорта C: "))
+proverka = float(input ("\n"+"Четвертая характеристика - stymulanta - введите 1, если destymulanta - введите 2, nominanta - 3 "+"\n"))
+if proverka==1:
+	maxx=max(a1,b1,c1)
+	minn=min(a1,b1,c1)
+	xxxx1=(a1-minn)/(maxx-minn)
+	xxxx2=(b1-minn)/(maxx-minn)
+	xxxx3=(c1-minn)/(maxx-minn)
+	print("\n"+"x1="+str(xxxx1)+"\n"+"x2="+str(xxxx2)+"\n"+"x3="+str(xxxx3)+"\n")
+elif proverka==2:
+	maxx=max(a1,b1,c1)
+	minn=min(a1,b1,c1)
+	xxxx1=(maxx-a1)/(maxx-minn)
+	xxxx2=(maxx-b1)/(maxx-minn)
+	xxxx3=(maxx-c1)/(maxx-minn)
+	print("\n"+"x1="+str(xxxx1)+"\n"+"x2="+str(xxxx2)+"\n"+"x3="+str(xxxx3)+"\n")
+else:
+	nominan=float(input ("Введите идеальное значение для номинанты: "))
+	maxx=max(a1,b1,c1,nominan)
+	minn=min(a1,b1,c1,nominan)
+	if nominan>a1:
+		xxxx1=(a1-minn)/(nominan-minn)
+	else:
+		xxxx1=(maxx-a1)/(maxx-nominan)
+	if nominan>b1:
+		xxxx2=(b1-minn)/(nominan-minn)
+	else:
+		xxxx2=(maxx-b1)/(maxx-nominan)
+	if nominan>c1:
+		xxxx3=(c1-minn)/(nominan-minn)
+	else:
+		xxxx3=(maxx-c1)/(maxx-nominan)
+	print("\n"+"x1="+str(xxxx1)+"\n"+"x2="+str(xxxx2)+"\n"+"x3="+str(xxxx3)+"\n")
+#
+#
+#
+#
+w1 = float(input ("Введите w1 = "))
+w2 = float(input ("Введите w2 = "))
+w3 = float(input ("Введите w3 = "))
+w4 = float(input ("Введите w4 = "))
+tran1=(w1*x1)+(w2*xx1)+(w3*xxx1)+(w4*xxxx1)
+tran2=(w1*x2)+(w2*xx2)+(w3*xxx2)+(w4*xxxx2)
+tran3=(w1*x3)+(w2*xx3)+(w3*xxx3)+(w4*xxxx3)
+print("\n"+"A="+str(tran1)+"\n"+"B="+str(tran2)+"\n"+"C="+str(tran3)+"\n")
